@@ -48,6 +48,11 @@ a {
     gap: 1.688rem;
 }
 
+.header__logo-gikit,
+.header__logo-minkult {
+    max-width: 100%;;
+}
+
 .header__lang {
     display: flex;
     gap: 1rem;
@@ -240,6 +245,14 @@ a {
 
 .info-links__btn {
     display: flex;
+    background-color: #3acbc7;
+    border-radius: 50px;
+    justify-content: space-around;
+    padding: 1.563rem;
+}
+
+.info-links__btn-mob {
+    display: none;
     background-color: #3acbc7;
     border-radius: 50px;
     justify-content: space-around;
@@ -808,7 +821,7 @@ a {
         padding: 1rem;
     }
 
-    .see-all {
+    .see-all_hidden {
         display: none;
     }
 
@@ -841,6 +854,111 @@ a {
     }
 }
 
-@media (max-width: 800px) {}
+@media (max-width: 790px) {
+    main {
+        font-size: 0.8rem;
+    }
+
+    .header__container-mob {
+        padding: 1.2rem;
+    }
+
+    .header__logo-gikit {
+        width: 110px;
+    }
+
+    .header__logo-minkult {
+        width: 50px;
+    }
+
+    .header__icon {
+        gap:1.55rem;
+    }
+
+
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header__info-login {
+        top:0;
+        transform: translateX(2px);
+    }
+
+    .header__nav-item {
+        font-size: 0.8rem;
+    }
+
+    .info-links_group-wrapper {
+        flex-direction: column;
+    }
+
+    .info-links {
+        flex-wrap: wrap;
+        padding: 1.2rem;
+        gap: 2rem;
+    }
+
+    .info-links_group-wrapper {
+        gap: 2rem;
+    }
+
+    .info-links__list {
+        gap: 1.5rem;
+    }
+
+    .info-links__list-item {
+        font-size: 0.8rem;
+    }
+
+    .info-links__list_gap {
+        gap: 1.2rem;
+    }
+
+    .info-links__btn {
+        display: none;
+    }
+
+    .info-links__btn-mob {
+        display: flex;
+        padding: 1rem;
+        gap: 0.7rem;
+    }
+
+    .info-links__list-items {
+        gap: 0.5rem;
+    }
+
+    .infographics-info {
+        height: 50vh;
+        overflow-x: scroll;
+        justify-content: space-between;
+        transform: translateY(-15px);
+    }
+    
+    .infographics-info__item {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .infographics-info__item-header {
+        font-size: 2rem;
+    }
+
+    .infographics-info__item-text {
+        font-size: 0.8rem;
+    }
+
+    .section-item__title {
+        font-size: 2rem;
+    }
+
+    .section-item-header {
+        padding: 0 1.2rem 0.875rem 1.2rem;
+    }
+
+}
 
 @media (max-width: 599px) {}
