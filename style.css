@@ -415,8 +415,16 @@ h3 {
 
 /* events */
 
+.events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.25rem;
+    max-width: 90%;
+}
+
 .events-btn {
-    padding: 1rem;
+    padding: 1rem 3rem;
     background-color: #17777b;
     border-radius: 20px;
     color: #FFFFFF;
@@ -429,6 +437,7 @@ h3 {
     flex: 0 0 15px;
     min-width: 0;
     white-space: nowrap;
+    max-width: 10%;
 }
 
 .events-btn p {
@@ -439,13 +448,10 @@ h3 {
     padding-top: 7.75rem;
     display: flex;
     flex: 1;
-    gap: 3rem;
+    justify-content: space-between;
     padding-bottom: 2.125rem;
 }
 
-.events>.section-item {
-    padding: 0;
-}
 
 .events-card {
     position: relative;
