@@ -124,8 +124,46 @@ a {
 
 /* hero */
 
+.image-container.first-active:first-child{
+    margin-left: 0;
+}
+.image-container.second-active:first-child{
+    margin-left: 0;
+}
+.image-container.third-active:first-child{
+    margin-left: 0;
+}
+
+.image-container.four-active:first-child{
+    margin-left: 0;
+}
+
+.hero__btn.first-current #btn-one{
+    background-color: #ffffff;
+}
+.hero__btn.second-current #btn-two{
+    background-color: #ffffff;
+}
+.hero__btn.third-current #btn-three{
+    background-color: #ffffff;
+}
+
+.hero__btn.four-current #btn-four{
+    background-color: #ffffff;
+}
+
 .hero-container {
     position: relative;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.banner-link {
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .banner-image {
@@ -145,14 +183,15 @@ a {
 }
 
 .hero__btn-click {
-    background-color: inherit;
+    background-color: transparent;
     border: 0.063rem solid #FFFFFF;
     width: 1rem;
     height: 1rem;
     border-radius: 50px;
+    cursor: pointer;
 }
 
-.hero__btn-click_color {
+.active {
     background: #ffffff;
 }
 

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -92,13 +93,21 @@
     <main>
         <section class="hero section">
             <div class="hero-container">
-                <a class="banner-link" href=""><img class="banner-image" src="./images/hero_banner.png"
-                        alt="Баннер"></a>
-                <div class="hero__btn">
-                    <button type="submit" class="hero__btn-click hero__btn-click_color"></button>
-                    <button type="submit" class="hero__btn-click"></button>
-                    <button type="submit" class="hero__btn-click"></button>
-                    <button type="submit" class="hero__btn-click"></button>
+                <div class="image-container first-active">
+                    <a class="banner-link" href=""><img class="banner-image" src="./images/hero_banner.png"
+                            alt="Баннер"></a>
+                    <a class="banner-link" href=""><img class="banner-image" src="./images/partners-image-2.png"
+                            alt="Баннер"></a>
+                    <a class="banner-link" href=""><img class="banner-image" src="./images/infografic-image.png"
+                            alt="Баннер"></a>
+                    <a class="banner-link" href=""><img class="banner-image" src="./images/hero_banner.png"
+                            alt="Баннер"></a>
+                </div>
+                <div class="hero__btn first-current">
+                    <button id="btn-one" type="submit" class="hero__btn-click"></button>
+                    <button id="btn-two" type="submit" class="hero__btn-click"></button>
+                    <button id="btn-three" type="submit" class="hero__btn-click"></button>
+                    <button id="btn-four" type="submit" class="hero__btn-click"></button>
                 </div>
             </div>
         </section>
@@ -155,10 +164,10 @@
                 </div>
                 <div>
                     <ul class="info-links__btn-mob">
-                        <li class="info-links__list-items"><img src="./images/contacts-icon.png" alt=""
-                                width="33"><a class="info-links__list-item" href="">Контакты</a></li>
-                        <li class="info-links__list-items"><img src="./images/Feedback-Icon.png" alt=""
-                                width="33"><a class="info-links__list-item" href="">Обратная связь</a></li>
+                        <li class="info-links__list-items"><img src="./images/contacts-icon.png" alt="" width="33"><a
+                                class="info-links__list-item" href="">Контакты</a></li>
+                        <li class="info-links__list-items"><img src="./images/Feedback-Icon.png" alt="" width="33"><a
+                                class="info-links__list-item" href="">Обратная связь</a></li>
                     </ul>
                 </div>
             </div>
