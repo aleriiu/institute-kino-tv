@@ -971,6 +971,7 @@ a:hover {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        gap: 0;
     }
 
     .header__nav-item {
