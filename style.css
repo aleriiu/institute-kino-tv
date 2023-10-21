@@ -546,7 +546,8 @@ a:hover {
 }
 
 .events-btn-news p {
-    transform: rotate(-270deg)
+    transform: rotate(-270deg);
+    font-size: 1.3rem;
 }
 
 .events-btn {
