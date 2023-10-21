@@ -45,11 +45,12 @@
                     <p>23.05.2023</p>
                 </div>
                 <p>нечетная неделя</p>
+                <div class="header__info-login">
+                    <img src="./images/person_icon.png" alt="Иконка Пользователя">
+                    <p>ЭИОС</p>
+                </div>
             </div>
-            <div class="header__info-login">
-                <img src="./images/person_icon.png" alt="Иконка Пользователя">
-                <p>ЭИОС</p>
-            </div>
+
         </div>
         <div class="header__container-mob">
             <div class="header__row1">
@@ -69,44 +70,43 @@
                         <a href=""><img src="./images/eye_icon.png" alt="Иконка Глазик"></a>
                     </div>
                 </div>
-                
-            </div>
-            <div class="header__info">
-                <div class="header__info-data">
-                    <p>вторник</p>
-                    <p>23.05.2023</p>
-                </div>
-                <p>нечетная неделя</p>
-                <div class="header__info-login">
-                    <img src="./images/person_icon.png" alt="Иконка Пользователя">
-                    <p>ЭИОС</p>
-                </div>
+
             </div>
             <div class="header__row2">
+                <div class="header__info">
+                    <div class="header__info-data">
+                        <p>вторник</p>
+                        <p>23.05.2023</p>
+                    </div>
+                    <p>нечетная неделя</p>
+                    <div class="header__info-login">
+                        <img src="./images/person_icon.png" alt="Иконка Пользователя">
+                        <p>ЭИОС</p>
+                    </div>
+                </div>
                 <ul class="header__nav">
                     <li><a class="header__nav-item" href="">Институт</a></li>
                     <li><a class="header__nav-item" href="">Абитуриенту</a></li>
                     <li><a class="header__nav-item" href="">Студенту</a></li>
                 </ul>
-                
             </div>
         </div>
     </header>
     <main>
         <section class="hero section">
             <div class="hero-container">
-                <div class="image-container first-active">
+                <div class="image-container">
                     <a class="banner-link" href=""><img class="banner-image " src="./images/hero_banner.png"
                             alt="Баннер"></a>
-                    <a class="banner-link" href=""><img class="banner-image" src="./images/partners-image-2.png"
-                            alt="Баннер"></a>
-                    <a class="banner-link" href=""><img class="banner-image" src="./images/infografic-image.png"
-                            alt="Баннер"></a>
-                    <a class="banner-link" href=""><img class="banner-image" src="./images/infografic-image.png"
-                            alt="Баннер"></a>
+                    <a class="banner-link img-hidden" href=""><img class="banner-image"
+                            src="./images/hero_banner — копия.png" alt="Баннер"></a>
+                    <a class="banner-link img-hidden" href=""><img class="banner-image"
+                            src="./images/hero_banner — копия (2).png" alt="Баннер"></a>
+                    <a class="banner-link img-hidden" href=""><img class="banner-image"
+                            src="./images/hero_banner — копия (3).png" alt="Баннер"></a>
                 </div>
-                <div class="hero__btn first-current">
-                    <button id="btn-one" type="submit" class="hero__btn-click"></button>
+                <div class="hero__btn">
+                    <button id="btn-one" type="submit" class="hero__btn-click btn-active"></button>
                     <button id="btn-two" type="submit" class="hero__btn-click"></button>
                     <button id="btn-three" type="submit" class="hero__btn-click"></button>
                     <button id="btn-four" type="submit" class="hero__btn-click"></button>
@@ -164,14 +164,12 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <ul class="info-links__btn-mob">
-                        <li class="info-links__list-items"><img src="./images/contacts-icon.png" alt="" width="33"><a
-                                class="info-links__list-item" href="">Контакты</a></li>
-                        <li class="info-links__list-items"><img src="./images/Feedback-Icon.png" alt="" width="33"><a
-                                class="info-links__list-item" href="">Обратная связь</a></li>
-                    </ul>
-                </div>
+                <ul class="info-links__btn-mob">
+                    <li class="info-links__list-items"><img src="./images/contacts-icon.png" alt="" width="33"><a
+                            class="info-links__list-item" href="">Контакты</a></li>
+                    <li class="info-links__list-items"><img src="./images/Feedback-Icon.png" alt="" width="33"><a
+                            class="info-links__list-item" href="">Обратная связь</a></li>
+                </ul>
             </div>
             <div class="info-links info-links_color">
                 <div class="info-links__list">
@@ -278,9 +276,7 @@
                     </div>
                     <div class="infographics-info__item">
                         <h2 class="infographics-info__item-header">232</h2>
-                        <p class="infographics-info__item-text">Преподавателя - лауреаты всероссийских и международных
-                            конкурсов и имеют Государственные
-                            премии</p>
+                        <p class="infographics-info__item-text">Преподавателя - лауреаты всероссийских и международных конкурсов и имеют Государственные премии</p>
                     </div>
                     <div class="infographics-info__item">
                         <h2 class="infographics-info__item-header">50</h2>
@@ -288,9 +284,7 @@
                     </div>
                     <div class="infographics-info__item">
                         <h2 class="infographics-info__item-header">25</h2>
-                        <p class="infographics-info__item-text">Преподавателей имеют государственные почетные звания
-                            &#171;Народный артист РФ&#187;,
-                            &#171;Заслуженный артист РФ&#187;</p>
+                        <p class="infographics-info__item-text">Преподавателей имеют государственные почетные звания &#171;Народный артист РФ&#187;, &#171;Заслуженный артист РФ&#187;</p>
                     </div>
                     <div class="infographics-info__item">
                         <h2 class="infographics-info__item-header">4</h2>

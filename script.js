@@ -1,54 +1,48 @@
-'use strict'
+'use strict';
 
-// const btnOne = document.getElementById('btn-one');
-// const btnTwo = document.getElementById('btn-two');
-// const btnThree = document.getElementById('btn-three');
-// const btnFour = document.getElementById('btn-four');
+let imgs = document.querySelectorAll('.banner-link');
+let dots = document.querySelectorAll('.hero__btn-click');
 
-// btnTwo.addEventListener('click', (event) => {
+let totalImgs = imgs.length;
+let imgPosition= 0;
 
-//     btnTwo.classList.add("active");
+// Update Position
+function updatePosition() {
+    //Images
+    for (let i = 0; i < totalImgs; i++) {
+        if (i === imgPosition) {
+            imgs[i].classList.remove('img-hidden');
+        } else {
+            imgs[i].classList.add('img-hidden');
+        }
 
-// });
+    }
+    //Dots
+    for (let i = 0; i < dots.length; i++) {
+        if (i === imgPosition) {
+            dots[i].classList.add("btn-active");
+        } else {
+            dots[i].classList.remove('btn-active');
+        }
 
-// btnThree.addEventListener('click', (event) => {
+    }
 
-//     btnThree.classList.add("active");
-    
-// });
-
-// btnFour.addEventListener('click', (event) => {
-
-//     btnFour.classList.add("active");
-    
-// });
-
-// btnOne.addEventListener('click', (event) => {
-
-//     btnOne.classList.add("active");
-    
-// });
-
-const imgContainer = document.querySelector('.image-container')
-const dotsContainer = document.querySelector('.hero__btn')
+}
 
 
-document.getElementById('btn-one').addEventListener('click', ()=>{
-    imgContainer.className = 'image-container first-active'
-    dotsContainer.className = 'hero__btn first-current'
-})
-document.getElementById('btn-two').addEventListener('click', ()=>{
-    imgContainer.className = 'image-container second-active'
-    dotsContainer.className = 'hero__btn second-current'
-})
-document.getElementById('btn-three').addEventListener('click', ()=>{
-    imgContainer.className = 'image-container third-active'
-    dotsContainer.className = 'hero__btn third-current'
-})
+// Dot Position
+dots.forEach((dot, dotPosition) => {
+    dot.addEventListener("click", () => {
+      imgPosition = dotPosition
+      updatePosition()
+    })
+  })
 
-document.getElementById('btn-four').addEventListener('click', ()=>{
-    imgContainer.className = 'image-container four-active'
-    dotsContainer.className = 'hero__btn four-current'
-})
-
-
+  setInterval( function (){
+    if (imgPosition === totalImgs -1){
+          imgPosition = 0;
+      } else{
+          imgPosition++;
+      }
+      updatePosition();
+  }, 5000)
