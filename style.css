@@ -28,8 +28,15 @@ a {
     cursor: pointer;
 }
 
-a:hover {
+a:hover,
+.header__nav-item p:hover,
+.header__info-login a:hover {
     color: #3acbc8;
+    cursor: pointer;
+}
+
+.info-links__list-item_hover:hover {
+    color: #18777b;
 }
 
 /* header */
@@ -83,6 +90,9 @@ a:hover {
     transform: translateX(-35%);
     width: 51rem;
     top: 3.5rem;
+    -webkit-box-shadow: 0px 7px 20px 6px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0px 7px 20px 6px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 7px 20px 6px rgba(0, 0, 0, 0.03);
 }
 
 .header__nav-item__content {
@@ -170,7 +180,7 @@ a:hover {
     transform: translateX(2px) translateY(-1%);
 }
 
-.header__info-login>p {
+.header__info-login > a {
     color: #18777b;
     font-size: 0.75rem;
     font-weight: 700;
@@ -408,7 +418,20 @@ a:hover {
     background-color: #FFFFFF;
     border-radius: 20px;
     gap: 3.375rem;
+    position: relative;
 }
+
+.card-link {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+
 
 .news-card__image {
     max-width: 100%;
@@ -590,6 +613,7 @@ a:hover {
     width: 49%;
     flex-shrink: 0;
     gap: 2.75rem;
+    position: relative;
 }
 
 .events-card__date {
@@ -636,6 +660,7 @@ a:hover {
 .advts-card {
     width: 24.5%;
     flex-shrink: 0;
+    position: relative;
 
 }
 
@@ -648,6 +673,7 @@ a:hover {
 .videos-card {
     width: 50%;
     flex-shrink: 0;
+    position: relative;
 }
 
 .videos-card__video {
