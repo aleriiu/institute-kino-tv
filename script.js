@@ -62,9 +62,15 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         const accordionItemBody = accordionItemHeader.querySelector(".menu-wrapper");
         if (accordionItemHeader.classList.contains("active")) {
             accordionItemBody.style.maxHeight = "50vh";
+            accordionItemBody.style.boxShadow = "0px 7px 20px 6px rgba(0, 0, 0, 0.04)";
+            accordionItemBody.style.webkitBoxShadow = "0px 7px 20px 6px rgba(0, 0, 0, 0.04)";
+            accordionItemBody.style.mozBoxShadow = "0px 7px 20px 6px rgba(0, 0, 0, 0.04)";
         }
         else {
             accordionItemBody.style.maxHeight = 0;
+            accordionItemBody.style.boxShadow = 0;
+            accordionItemBody.style.webkitBoxShadow = 0;
+            accordionItemBody.style.mozBoxShadow = 0;
         }
 
     });
