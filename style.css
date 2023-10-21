@@ -431,10 +431,8 @@ a:hover,
     cursor: pointer;
 }
 
-
-
 .news-card__image {
-    max-width: 100%;
+    width: 100%;
 }
 
 .news-card__image-wrapper {
@@ -553,7 +551,7 @@ a:hover,
 }
 
 .events-btn-news {
-    padding: 17.9rem 3rem;
+    padding: 0 3rem;
     background-color: #17777b;
     border-radius: 20px;
     color: #FFFFFF;
@@ -567,6 +565,7 @@ a:hover,
     min-width: 0;
     white-space: nowrap;
     max-width: 10%;
+    align-self: stretch;
 }
 
 .events-btn-news p {
@@ -677,7 +676,7 @@ a:hover,
 }
 
 .videos-card__video {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* grant section */
@@ -1229,6 +1228,10 @@ a:hover,
     .footer-info-links {
         align-items: center;
         gap: 0.8rem;
+    }
+
+    .events-btn-news p {
+        font-size: 1rem;
     }
 
 }
