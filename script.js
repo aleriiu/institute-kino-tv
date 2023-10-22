@@ -2,96 +2,123 @@
 
 // banner
 
-let imgs = document.querySelectorAll('.banner-link');
-let dots = document.querySelectorAll('.hero__btn-click');
+const sectionContainer = document.querySelector(".image-container");
 
-let totalImgs = imgs.length;
-let imgPosition = 0;
+let currentIndex = 0;
+let slides = [];
+let dots = [];
 
-// Update Position
-function updatePosition() {
-    //Images
-    for (let i = 0; i < totalImgs; i++) {
-        if (i === imgPosition) {
-            imgs[i].classList.remove('img-hidden');
-        } else {
-            imgs[i].classList.add('img-hidden');
+function render() {
+    let offset = 0;
+    slides.forEach((slide, index) => {
+        if (index < currentIndex) {
+            offset += slide.offsetWidth;
         }
+    });
 
-    }
-    //Dots
-    for (let i = 0; i < dots.length; i++) {
-        if (i === imgPosition) {
-            dots[i].classList.add("btn-active");
-        } else {
-            dots[i].classList.remove('btn-active');
-        }
-
-    }
-
+    sectionContainer.style.transform = `translateX(-${offset}px)`;
+    dots.forEach((dot, index) => {
+        index === currentIndex
+            ? dot.classList.add("btn-active")
+            : dot.classList.remove("btn-active");
+    });
 }
 
+function prev() {
+    if (currentIndex < 0) return;
+    currentIndex -= 1;
+    render();
+}
 
-// Dot Position
-dots.forEach((dot, dotPosition) => {
-    dot.addEventListener("click", () => {
-        imgPosition = dotPosition
-        updatePosition()
-    })
-})
+function next() {
+    if (currentIndex === slides.length - 1) return;
+    currentIndex += 1;
+    render();
+}
 
-setInterval(function () {
-    if (imgPosition === totalImgs - 1) {
-        imgPosition = 0;
+function goto(newIndex) {
+    if (newIndex < 0 || newIndex > slides.length - 1) return;
+    currentIndex = newIndex;
+    render();
+}
+
+function init() {
+    const newSlides = document.querySelectorAll(".image-container > a");
+    slides = newSlides;
+
+    const newDots = document.querySelectorAll(".hero__btn > button");
+    newDots.forEach((dot, index) => {
+        dot.onclick = () => goto(index);
+    });
+    dots = newDots;
+
+    render();
+}
+
+init();
+
+setInterval(function () {    //переключение по таймеру
+    if (currentIndex === slides.length - 1) {
+        currentIndex = 0
     } else {
-        imgPosition++;
+        currentIndex += 1;
     }
-    updatePosition();
+    render();
 }, 5000)
-
-
 
 // accordion
 
-const accordionItemHeaders = document.querySelectorAll("#nav-item");
+// const accordionItemHeaders = document.querySelectorAll("#nav-item");
 
-accordionItemHeaders.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener("mouseenter", event => {
+// accordionItemHeaders.forEach(accordionItemHeader => {
+//     accordionItemHeader.addEventListener("mouseenter", event => {
+//         accordionItemHeaders.forEach(item => {
+//             const accordionItemBody = item.querySelector(".menu-wrapper");
+//             if (item === event.target) {
+//                 item.classList.add('active');
+//                 accordionItemBody.classList.add('menu-active');
+//             } else {
+//                 item.classList.remove('active');
+//                 accordionItemBody.classList.remove('menu-active');
+//             }
+//         })
 
-        accordionItemHeader.classList.toggle("active");
-        const accordionItemBody = accordionItemHeader.querySelector(".menu-wrapper");
-        if (accordionItemHeader.classList.contains("active")) {
-            accordionItemBody.style.maxHeight = "50vh";
-            accordionItemBody.style.boxShadow = "0px 7px 20px 6px rgba(0, 0, 0, 0.04)";
-            accordionItemBody.style.webkitBoxShadow = "0px 7px 20px 6px rgba(0, 0, 0, 0.04)";
-            accordionItemBody.style.mozBoxShadow = "0px 7px 20px 6px rgba(0, 0, 0, 0.04)";
-        }
-        else {
-            accordionItemBody.style.maxHeight = 0;
-            accordionItemBody.style.boxShadow = 0;
-            accordionItemBody.style.webkitBoxShadow = 0;
-            accordionItemBody.style.mozBoxShadow = 0;
-        }
+//     });
 
-    });
-});
+// }
+// );
 
-const accordionItemHeadersMob = document.querySelectorAll("#nav-item-mob");
+// accordionItemHeaders.forEach(accordionItemHeader => {
+//     accordionItemHeader.addEventListener("mouseleave", event => {
+//         accordionItemHeaders.forEach(item => {
+//             const accordionItemBody = item.querySelector(".menu-wrapper");
+//             item.classList.remove('active');
+//             accordionItemBody.classList.remove('menu-active');
+//         })
 
-accordionItemHeadersMob.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener("click", event => {
+//     });
 
-        accordionItemHeader.classList.toggle("active");
-        const accordionItemBody = accordionItemHeader.querySelector(".menu-wrapper");
-        if (accordionItemHeader.classList.contains("active")) {
-            accordionItemBody.style.maxHeight = "50vh";
-        }
-        else {
-            accordionItemBody.style.maxHeight = 0;
-        }
+// }
+// )
 
-    });
-});
+
+// const accordionItemHeadersMob = document.querySelectorAll("#nav-item-mob");
+
+// accordionItemHeadersMob.forEach(accordionItemHeader => {
+//     accordionItemHeader.addEventListener("click", event => {
+//         accordionItemHeadersMob.forEach(item => {
+//             const accordionItemBody = item.querySelector(".menu-wrapper");
+//             if (item === event.target) {
+//                 item.classList.add('active');
+//                 accordionItemBody.classList.add('menu-active');
+//             } else {
+//                 item.classList.remove('active');
+//                 accordionItemBody.classList.remove('menu-active');
+//             }
+//         })
+
+//     });
+// });
 
 // mouse 
 
@@ -100,21 +127,21 @@ let startX, scrollLeft;
 const slider = document.getElementById('videos');
 
 const startDragging = (e) => {
-  mouseDown = true;
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
+    mouseDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
 }
 
 const stopDragging = (e) => {
-  mouseDown = false;
+    mouseDown = false;
 }
 
 const move = (e) => {
-  e.preventDefault();
-  if(!mouseDown) { return; }
-  const x = e.pageX - slider.offsetLeft;
-  const scroll = x - startX;
-  slider.scrollLeft = scrollLeft - scroll;
+    e.preventDefault();
+    if (!mouseDown) { return; }
+    const x = e.pageX - slider.offsetLeft;
+    const scroll = x - startX;
+    slider.scrollLeft = scrollLeft - scroll;
 }
 
 // Add the event listeners
