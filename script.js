@@ -66,60 +66,6 @@ setInterval(function () {    //переключение по таймеру
     render();
 }, 5000)
 
-// accordion
-
-// const accordionItemHeaders = document.querySelectorAll("#nav-item");
-
-// accordionItemHeaders.forEach(accordionItemHeader => {
-//     accordionItemHeader.addEventListener("mouseenter", event => {
-//         accordionItemHeaders.forEach(item => {
-//             const accordionItemBody = item.querySelector(".menu-wrapper");
-//             if (item === event.target) {
-//                 item.classList.add('active');
-//                 accordionItemBody.classList.add('menu-active');
-//             } else {
-//                 item.classList.remove('active');
-//                 accordionItemBody.classList.remove('menu-active');
-//             }
-//         })
-
-//     });
-
-// }
-// );
-
-// accordionItemHeaders.forEach(accordionItemHeader => {
-//     accordionItemHeader.addEventListener("mouseleave", event => {
-//         accordionItemHeaders.forEach(item => {
-//             const accordionItemBody = item.querySelector(".menu-wrapper");
-//             item.classList.remove('active');
-//             accordionItemBody.classList.remove('menu-active');
-//         })
-
-//     });
-
-// }
-// )
-
-
-// const accordionItemHeadersMob = document.querySelectorAll("#nav-item-mob");
-
-// accordionItemHeadersMob.forEach(accordionItemHeader => {
-//     accordionItemHeader.addEventListener("click", event => {
-//         accordionItemHeadersMob.forEach(item => {
-//             const accordionItemBody = item.querySelector(".menu-wrapper");
-//             if (item === event.target) {
-//                 item.classList.add('active');
-//                 accordionItemBody.classList.add('menu-active');
-//             } else {
-//                 item.classList.remove('active');
-//                 accordionItemBody.classList.remove('menu-active');
-//             }
-//         })
-
-//     });
-// });
-
 // mouse 
 
 let mouseDown = false;
