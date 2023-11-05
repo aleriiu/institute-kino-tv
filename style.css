@@ -28,10 +28,6 @@ a {
     cursor: pointer;
 }
 
-a:visited {
-    color: inherit;
-}
-
 a:hover,
 .header__nav-item p:hover,
 .header__info-login a:hover {
@@ -100,9 +96,9 @@ a:hover,
 #nav-item:hover .menu-wrapper,
 #nav-item:active .menu-wrapper {
     height: auto;
-    box-shadow:0px 7px 20px 6px rgba(0, 0, 0, 0.04);
-    -moz-box-shadow:0px 7px 20px 6px rgba(0, 0, 0, 0.04);
-    -webkit-box-shadow:0px 7px 20px 6px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 7px 20px 6px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0px 7px 20px 6px rgba(0, 0, 0, 0.04);
+    -webkit-box-shadow: 0px 7px 20px 6px rgba(0, 0, 0, 0.04);
 }
 
 .header__nav-item__content {
@@ -197,7 +193,7 @@ a:hover,
     transform: translateX(2px) translateY(-1%);
 }
 
-.header__info-login > a {
+.header__info-login>a {
     color: #18777b;
     font-size: 0.75rem;
     font-weight: 700;
@@ -379,7 +375,7 @@ a:hover,
 
 .see-all__title {
     font-size: 1rem;
-
+    color: #000000;
 }
 
 .section-item-container {
@@ -591,7 +587,7 @@ a:hover,
     position: relative;
 }
 
-.events-btn-news a{
+.events-btn-news a {
     position: absolute;
     top: 0;
     left: 0;
@@ -1521,7 +1517,6 @@ a:hover,
         height: 50px;
         overflow: hidden;
         transition: all 0.4s ease-out
-
     }
 
     .tags-socials:hover,
