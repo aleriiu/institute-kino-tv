@@ -1086,7 +1086,7 @@ a:hover,
 }
 
 .employee-card_img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .employee-card__text {
@@ -1111,6 +1111,15 @@ a:hover,
     display: flex;
     flex-direction: column;
     gap: 2.063rem;
+}
+
+.accordion_trigger::after {
+    content: url(./images/arrow-down.png);
+    transform: translateX(-100%);
+}
+
+:checked+.accordion_trigger::after {
+    content: url(./images/arrow-up.png);
 }
 
 .accordion_trigger {
@@ -1486,20 +1495,29 @@ a:hover,
         overflow: hidden;
         transition: all 0.4s ease-out;
         background-color: inherit;
-        padding: 3.938rem 2.688rem 0.313rem 2.438rem
+        padding: 3.938rem 2.688rem 0.313rem 2.438rem;
+        position: absolute;
+        right: 0;
+        margin-right: 0;
     }
 
     .sidebar__container:hover,
     .sidebar__chapter:hover,
     .sidebar__container:active,
     .sidebar__chapter:active {
-        max-width: 100%;
-        height: auto;
+        max-width: 80%;
+        height: 100%;
+        opacity: 95%;
         background-color: #18777b;
+        padding-bottom: 1rem;
     }
 
     .employee-card__about-name {
         font-size: 2.7rem;
+    }
+
+    .employee-card__contacts {
+        flex-direction: column;
     }
 
     /*------------------------EMPLOYEE CARD PAGE ENDS------------------------*/
@@ -1848,10 +1866,6 @@ a:hover,
         opacity: 95%;
     }
 
-    .burger-menu {
-        left: 5px;
-    }
-
     .sidebar__chapter-header {
         font-size: 0.8rem;
     }
@@ -1862,11 +1876,6 @@ a:hover,
 
     .employee-card__container {
         padding: 2.5rem 1.625rem;
-    }
-
-    .employee-card__description {
-        flex-direction: column;
-        align-items: unset;
     }
 
     .employee-card__about-name {
@@ -1905,9 +1914,8 @@ a:hover,
     .sidebar__container {
         position: absolute;
         right: 0;
-        margin-right: 0;
         display: block;
-        padding: 1.938rem 1.688rem 0.313rem 1.438rem;
+        padding-right: 1rem;
     }
 
     .sidebar__chapter {
@@ -1919,4 +1927,8 @@ a:hover,
 
 }
 
-@media (max-width: 599px) {}
+@media (max-width: 599px) {
+    .employee-card__description {
+        flex-direction: column;
+    }
+}
