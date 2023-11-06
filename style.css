@@ -1002,7 +1002,7 @@ a:hover,
 .sidebar__container {
     background-color: #18777b;
     border-radius: 20px;
-    padding: 4.938rem 3.688rem 3.813rem 4.438rem;
+    padding: 4.938rem 3.688rem 3.813rem 3.438rem;
     display: flex;
     margin-right: 1rem;
     position: relative;
@@ -1113,19 +1113,19 @@ a:hover,
     gap: 2.063rem;
 }
 
-.accordion_trigger::after {
+.accordion_trigger::before {
     content: url(./images/arrow-down.png);
-    transform: translateX(-100%);
+    padding-right: 0.3rem;
 }
 
-:checked+.accordion_trigger::after {
+:checked+.accordion_trigger::before {
     content: url(./images/arrow-up.png);
+    padding-right: 0.3rem;
 }
 
 .accordion_trigger {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    align-items: center;
     color: #ffffff;
     cursor: pointer;
 }
@@ -1161,7 +1161,7 @@ a:hover,
     position: static;
     overflow: visible;
     clip: auto;
-    padding: 1rem 1rem 0.6rem 3rem;
+    padding: 1rem 1rem 0.6rem 4rem;
     width: auto;
     height: auto;
     /* задержка появления  функция анимации */
@@ -1897,6 +1897,7 @@ a:hover,
 
     .employee-card__contacts {
         padding-top: 1.063rem;
+        padding-bottom: 2.063rem;
         flex-direction: column;
     }
 
