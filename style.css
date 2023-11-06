@@ -981,6 +981,224 @@ a:hover,
 
 /* --------------------NEWS PAGE ENDS----------------*/
 
+
+/*----------------------EMPLOYEE CARD PAGE---------------------- */
+
+.hero-title {
+    position: absolute;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    top: 50%;
+    left: 3.3rem;
+    transform: translateY(-50%);
+}
+
+.employee-card {
+    display: flex;
+    margin-top: 0.75rem;
+}
+
+.sidebar__container {
+    background-color: #18777b;
+    border-radius: 20px;
+    padding: 4.938rem 3.688rem 3.813rem 4.438rem;
+    display: flex;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.burger-menu {
+    padding-top: 0.5rem;
+    display: none;
+    width: 25px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.burger-menu > span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #18777b;
+}
+
+.burger-menu > span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.sidebar__chapter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sidebar__chapter-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.438rem;
+    color: #FFFFFF;
+}
+
+.sidebar__chapter-header {
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 1.438rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/* .sidebar__chapter-header li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./images/arrow-down.png);
+    margin-right: 3px;
+} */
+
+.employee-card__container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 4.5rem 3.625rem 3.813rem 3.063rem;
+}
+
+.employee-card__description {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.8rem;
+    align-items: center;
+}
+
+.employee-card__about-name {
+    font-size: 3.625rem;
+    line-height: 4.375rem;
+    font-weight: 700;
+    color: #18777b;
+    padding-bottom: 3.063rem;
+}
+
+.employee-card__about-text {
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+    font-weight: 700;
+    color: #18777b;
+}
+
+.employee-card__contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.063rem;
+}
+
+.employee-card__text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.438rem;
+}
+
+.employee-card__header {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+    color: #18777b;
+}
+
+.employee-card__info {
+    padding-bottom: 2.8rem;
+}
+
+.employee-card__documents {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.063rem;
+}
+
+.accordion_trigger {
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* меняется цвет у активного переключателя */
+
+.accordion_toggle:checked~.accordion_trigger {
+    color: #3acbc7;
+}
+
+.accordion_toggle {
+    position: absolute;
+    display: none;
+}
+
+/**
+  * скрытое содержание аккордеона.
+  */
+.accordion_target {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/**
+  * когда переключатель checked на radio/checkbox, показать содержимое аккордеона.
+  */
+.accordion_toggle:checked~.accordion_target {
+    position: static;
+    overflow: visible;
+    clip: auto;
+    padding: 1rem 1rem 0.6rem 1rem;
+    width: auto;
+    height: auto;
+    /* задержка появления  функция анимации */
+    -webkit-animation: fadeIn ease-in 0.5s;
+    -moz-animation: fadeIn ease-in 0.5s;
+    animation: fadeIn ease-in 0.5s;
+}
+
+/* анимация при появлении блоков с содержанием */
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*----------------------EMPLOYEE CARD PAGE ENDS---------------------- */
+
 @media (min-width: 1921px) {
     .section {
         width: 70%;
@@ -1029,6 +1247,34 @@ a:hover,
     }
 
     /*------------------------NEWS PAGE ENDS------------------------*/
+
+     /*------------------------EMPLOYEE CARD PAGE------------------------ */
+     .burger-menu {
+        display: block;
+    }
+
+    .sidebar__container {
+        max-width: 7%;
+        height: 3rem;
+        overflow: hidden;
+        transition: all 0.4s ease-out;
+        background-color: inherit;
+    }
+
+    .sidebar__chapter {
+        overflow: hidden;
+    }
+
+    .sidebar__container:hover,
+    .sidebar__chapter:hover,
+    .sidebar__container:active,
+    .sidebar__chapter:active {
+        max-width: 26%;
+        height: auto;
+        background-color: #18777b;
+    }
+
+    /*------------------------EMPLOYEE CARD PAGE ENDS------------------------*/
 }
 
 @media (max-width: 1280px) {
