@@ -1866,6 +1866,7 @@ a:hover,
     .sidebar__chapter:active {
         width: 80%;
         opacity: 95%;
+        height: auto;
     }
 
     .sidebar__chapter-header {
