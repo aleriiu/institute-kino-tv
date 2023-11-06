@@ -1123,7 +1123,9 @@ a:hover,
 }
 
 .accordion_trigger {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     color: #ffffff;
     cursor: pointer;
 }
@@ -1159,7 +1161,7 @@ a:hover,
     position: static;
     overflow: visible;
     clip: auto;
-    padding: 1rem 1rem 0.6rem 1rem;
+    padding: 1rem 1rem 0.6rem 3rem;
     width: auto;
     height: auto;
     /* задержка появления  функция анимации */
