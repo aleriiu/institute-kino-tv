@@ -1269,7 +1269,7 @@ a:hover,
     .sidebar__chapter:hover,
     .sidebar__container:active,
     .sidebar__chapter:active {
-        max-width: 26%;
+        max-width: 100%;
         height: auto;
         background-color: #18777b;
     }
