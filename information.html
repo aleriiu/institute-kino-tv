@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сведения о ГИКИТ</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body ontouchstart="">
+    <header>
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./images/logo_gikit.png" alt="ГИКИТ Лого" width="200">
+                <img src="./images/logo_minkult.png" alt="Минкульт Лого" width="71">
+            </div>
+            <ul class="header__lang">
+                <li><a class="header__lang-item header__lang-item_color" href="">Рус</a></li>
+                <li><a class="header__lang-item" href="">Eng</a></li>
+                <li><a class="header__lang-item" href="">中文</a></li>
+            </ul>
+            <ul class="header__nav">
+                <li id="nav-item" class="header__nav-item">
+                    <p>Институт</p>
+                    <div class="menu-wrapper">
+                        <ul class="header__nav-item__content">
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Наши факультеты</a></li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Приемная комиссия</a></li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Переводы и восстановления</a>
+                            </li>
+                        </ul>
+                        <ul class="header__nav-item__content">
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Мероприятия абитуриентам</a>
+                            </li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Подготовительные курсы</a>
+                            </li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Подшефные учреждения</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="nav-item" class="header__nav-item">
+                    <p>Абитуриенту</p>
+                    <div class="menu-wrapper">
+                        <ul class="header__nav-item__content">
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Наши факультеты</a></li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Приемная комиссия</a></li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Переводы и восстановления</a>
+                            </li>
+                        </ul>
+                        <ul class="header__nav-item__content">
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Мероприятия абитуриентам</a>
+                            </li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Подготовительные курсы</a>
+                            </li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Подшефные учреждения</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="nav-item" class="header__nav-item">
+                    <p>Студенту</p>
+                    <div class="menu-wrapper">
+                        <ul class="header__nav-item__content">
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Наши факультеты</a></li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Приемная комиссия</a></li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Переводы и восстановления</a>
+                            </li>
+                        </ul>
+                        <ul class="header__nav-item__content">
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Мероприятия абитуриентам</a>
+                            </li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Подготовительные курсы</a>
+                            </li>
+                            <li><a class="header__nav-item header__nav-item-list" href="#">Подшефные учреждения</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="header__icon">
+                <a href=""><img src="./images/calendar_icon.png" alt="Иконка Календарь"></a>
+                <a href=""><img src="./images/search_icon.png" alt="Иконка Поиск"></a>
+                <a href=""><img src="./images/eye_icon.png" alt="Иконка Глазик"></a>
+            </div>
+            <div class="header__info">
+                <div class="header__info-data">
+                    <p>вторник</p>
+                    <p>23.05.2023</p>
+                </div>
+                <p>нечетная неделя</p>
+                <div class="header__info-login">
+                    <img src="./images/person_icon.png" alt="Иконка Пользователя">
+                    <a href="#">ЭИОС</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="header__container-mob">
+            <div class="header__row1">
+                <div class="header__logo">
+                    <img class="header__logo-gikit" src="./images/logo_gikit.png" alt="ГИКИТ Лого">
+                    <img class="header__logo-minkult" src="./images/logo_minkult.png" alt="Минкульт Лого">
+                </div>
+                <div class="lang-icon-container">
+                    <ul class="header__lang">
+                        <li><a class="header__lang-item header__lang-item_color" href="">Рус</a></li>
+                        <li><a class="header__lang-item" href="">Eng</a></li>
+                        <li><a class="header__lang-item" href="">中文</a></li>
+                    </ul>
+                    <div class="header__icon">
+                        <a href=""><img src="./images/calendar_icon.png" alt="Иконка Календарь"></a>
+                        <a href=""><img src="./images/search_icon.png" alt="Иконка Поиск"></a>
+                        <a href=""><img src="./images/eye_icon.png" alt="Иконка Глазик"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__row2">
+                <div class="header__info">
+                    <div class="header__info-data">
+                        <p>вторник</p>
+                        <p>23.05.2023</p>
+                    </div>
+                    <p>нечетная неделя</p>
+                    <div class="header__info-login">
+                        <img src="./images/person_icon.png" alt="Иконка Пользователя">
+                        <a href="#">ЭИОС</a>
+                    </div>
+                </div>
+                <ul class="header__nav">
+                    <li id="nav-item" class="header__nav-item">
+                        <p>Институт</p>
+                        <div class="menu-wrapper menu-wrapper_mob menu-wrapper_mob-inst">
+                            <ul class="header__nav-item__content">
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Наши факультеты</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Приемная комиссия</a>
+                                </li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Переводы и
+                                        восстановления</a></li>
+                            </ul>
+                            <ul class="header__nav-item__content">
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Мероприятия
+                                        абитуриентам</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Подготовительные
+                                        курсы</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Подшефные учреждения</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav-item" class="header__nav-item">
+                        <p>Абитуриенту</p>
+                        <div class="menu-wrapper menu-wrapper_mob">
+                            <ul class="header__nav-item__content">
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Наши факультеты</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Приемная комиссия</a>
+                                </li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Переводы и
+                                        восстановления</a></li>
+                            </ul>
+                            <ul class="header__nav-item__content">
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Мероприятия
+                                        абитуриентам</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Подготовительные
+                                        курсы</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Подшефные учреждения</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav-item" class="header__nav-item">
+                        <p>Студенту</p>
+                        <div class="menu-wrapper menu-wrapper_mob menu-wrapper_mob-stud">
+                            <ul class="header__nav-item__content">
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Наши факультеты</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Приемная комиссия</a>
+                                </li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Переводы и
+                                        восстановления</a></li>
+                            </ul>
+                            <ul class="header__nav-item__content">
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Мероприятия
+                                        абитуриентам</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Подготовительные
+                                        курсы</a></li>
+                                <li><a class="header__nav-item header__nav-item-list" href="#">Подшефные учреждения</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero section">
+            <div class="hero-container">
+                <img src="./images/banner-eml.png" class="banner-image" alt="Сведения об организации">
+                <h2 class="hero-title">СВЕДЕНИЯ <br /> ОБ ОРГАНИЗАЦИИ</h2>
+            </div>
+        </section>
+        <section class="employee-card section">
+            <aside class="sidebar__container sidebar__container-information">
+                <ul class="sidebar__chapter">
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" checked class="accordion_toggle" id="toggle-05" hidden>
+                        <label class="accordion_trigger" for="toggle-05">Основные сведения</label>
+                        <div class="accordion_target">
+                            <ul>
+                                <li><a class="sidebar__chapter-link" href="">Миссия</a></li>
+                                <li><a class="sidebar__chapter-link" href="">История</a></li>
+                                <li><a class="sidebar__chapter-link" href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-06" hidden>
+                        <label class="accordion_trigger" for="toggle-06">Структура и органы управления</label>
+                        <div class="accordion_target">
+                            <ul>
+                                <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                <li><a class="sidebar__chapter-link" href="">Попечительский совет</a></li>
+                                <li><a class="sidebar__chapter-link" href="">Почетные профессора СПбГИКиТ</a></li>
+                                <li><a class="sidebar__chapter-link" href="">Художественный совет</a></li>
+                                <li><a class="sidebar__chapter-link" href="">Учебные подразделенияa</a></li>
+                                <li><a class="sidebar__chapter-link" href="">Службы института</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-07" hidden>
+                        <label class="accordion_trigger" for="toggle-07">Документы</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-01" hidden>
+                        <label class="accordion_trigger" for="toggle-01">Образование</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-02" hidden>
+                        <label class="accordion_trigger" for="toggle-02">Образовательные
+                            стандарты&nbsp;и&nbsp;требования</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-03" hidden>
+                        <label class="accordion_trigger" for="toggle-03">Руководство. <br />
+                            Научно&#8209;педагогический состав</label>
+                        <div class="accordion_target">
+                            <ul>
+                                <li><a class="sidebar__chapter-link" href="">Миссия</a></li>
+                                <li><a class="sidebar__chapter-link" href="">История</a></li>
+                                <li><a class="sidebar__chapter-link" href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-04" hidden>
+                        <label class="accordion_trigger" for="toggle-04">Материально&#8209;техническое
+                            обеспечение и оснащенность образовательного процесса</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-08" hidden>
+                        <label class="accordion_trigger" for="toggle-08">Стипендии и иные виды
+                            материальной поддержки</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-09" hidden>
+                        <label class="accordion_trigger" for="toggle-09">Платные&nbsp;образовательные
+                            услуги</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-10" hidden>
+                        <label class="accordion_trigger" for="toggle-10">Финансово-хозяйственная
+                            деятельность</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-11" hidden>
+                        <label class="accordion_trigger" for="toggle-11">Вакантные места для приёма (перевода)</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-12" hidden>
+                        <label class="accordion_trigger" for="toggle-12">Доступная среда</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                    <li class="sidebar__chapter-header">
+                        <input type="checkbox" class="accordion_toggle" id="toggle-13" hidden>
+                        <label class="accordion_trigger" for="toggle-13">Международное
+                            сотрудничество</label>
+                        <div class="accordion_target">
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <div class="section-history">
+                <div class="section-history-header">
+                    <div class="history-header-wrapper">
+                        <h2 class="section-item__title">ИСТОРИЯ</h2>
+                    </div>
+                    <div class="history">
+                        <ul class="history__tags">
+                            <li class="history__tag"><a class="news__tag-link">История СПбГИКиТ</a></li>
+                            <li class="history__tag"><a class="news__tag-link">История здания</a></li>
+                            <li class="history__tag"><a class="news__tag-link">Страницы истории СПбГИКиТ</a></li>
+                            <li class="history__tag"><a class="news__tag-link">МногоЛИКИе годы войны</a></li>
+                        </ul>
+                    </div>
+                    <div class="history-card__text-wrapper">
+                        <p class="new-card__text">История Санкт-Петербургского государственного института кино и
+                            телевидения насчитывает более 100 лет. За это время в нем сложились крепкие традиции,
+                            ставшие основой для многих творческих открытий Советского и Российского кинематографа.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-item-container">
+                    <div class="news-card card-shadow">
+                        <a href="#" class="card-link"></a>
+                        <div class="news-card__image-wrapper">
+                            <img class="news-card__image" src="./images/history-card1.png">
+                        </div>
+                        <div class="news-card__text-wrapper">
+                            <h3 class="new-card__title">1918—1920 гг.</h3>
+                            <p class="new-card__text">
+                                История нашего вуза началась на заре ХХ века: 9 сентября 1918 года декретом Совнаркома
+                                РСФСР в Петрограде был учрежден Высший институт фотографии и фототехники...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-card card-shadow">
+                        <a href="#" class="card-link"></a>
+                        <div class="news-card__image-wrapper">
+                            <img class="news-card__image" src="./images/history-card2.png">
+                        </div>
+                        <div class="news-card__text-wrapper">
+                            <h3 class="new-card__title">1920 — 1930 гг.</h3>
+                            <p class="new-card__text">
+
+                                Прорывом в технологии стал 1920 год — была разработана технология отечественного
+                                производства фотобумаги и бромжелатиновых негативных фотопластин, конструкции первых
+                                советских...</p>
+                        </div>
+                    </div>
+                    <div class="news-card card-shadow">
+                        <a href="#" class="card-link"></a>
+                        <div class="news-card__image-wrapper">
+                            <img class="news-card__image" src="./images/history-card1.png">
+                        </div>
+                        <div class="news-card__text-wrapper">
+                            <h3 class="new-card__title">1930 — 1940 гг.</h3>
+                            <p class="new-card__text">
+                                Прорывом в технологии стал 1920 год — была разработана технология отечественного
+                                производства фотобумаги и бромжелатиновых негативных фотопластин, конструкции первых
+                                советских...</p>
+                        </div>
+                    </div>
+                    <div class="events-btn-news">
+                        <a href="./news.html"></a>
+                        <p>Перейти в раздел</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section news section-contacts">
+            <div class="section-contacts-header">
+                <div class="contacts-header-wrapper">
+                    <h2 class="section-item__title">КОНТАКТЫ</h2>
+                    <div class="contacts-container">
+                        <div class="contact-container">
+                            <h3 class="contact-container_header">Адрес:</h3>
+                            <p class="contact-container_text">191119, Санкт-Петербург, ул. Правды, 13</p>
+                        </div>
+                        <div class="contact-container">
+                            <h3 class="contact-container_header">Приемная ректора: </h3>
+                            <p class="contact-container_text">тел: +7 (812) 315–72–85 <br />
+                                факс: +7 (812) 315–72–85 <br />
+                                rektorat@gukit.ru</p>
+                        </div>
+                        <div class="contact-container">
+                            <h3 class="contact-container_header">Приемная комиссия:</h3>
+                            <p class="contact-container_text">тел: +7 (812) 315–74–83 <br />
+                                priem@gukit.ru</p>
+                        </div>
+                        <div class="contact-container">
+                            <h3 class="contact-container_header">Подготовительные курсы:</h3>
+                            <p class="contact-container_text"> тел: +7 (812) 315–69–51 <br />
+                                cdp@gukit.ru </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec9087f0256e0cf8dee833d14f18d148ce3a5173ee8e89aa555dcda48e37f9bd&amp;source=constructor"
+                width="100%" height="688" frameborder="0"></iframe>
+        </section>
+        <section class="grant section">
+            <div class="grant__container">
+                <div class="grant-info">
+                    <img class="grant-info_img-icon" src="./images/partners-image-1.png" alt="">
+                    <div class="grant-info__description">
+                        <h3 class="grant-info__description-header">Ассоциация учебных заведений искусства и культуры
+                        </h3>
+                        <p class="grant-info__description-text">Ассоциация учебных заведений искусства и культуры, в
+                            которую входит СПбГИКиТ, выиграла грант
+                            Президента Российской Федерации на проект «Второе высшее образование, как фактор повышения
+                            уровня подготовки специалистов творческих профессий»</p>
+                    </div>
+                </div>
+                <img class="grant-info_img" src="./images/partners-image-2.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <img src="./images/logo_gikit-white.png" alt="" class="header__logo-gikit">
+            <div class="footer-description">
+                <p>&copy;&nbsp;Служба информации и общественных связей
+                    Использование материалов сайта возможно только
+                    с письменного разрешения правообладателя</p>
+
+                <p>Пользовательское соглашение и политика
+                    конфиденциальности официального сайта СПбГИКиТ</p>
+            </div>
+            <div class="footer-socials">
+                <a href=""><img src="./images/youtube-icon.png" alt=""></a>
+                <a href=""><img src="./images/telegram-icon.png" alt=""></a>
+                <a href=""><img src="./images/vk-icon.png" alt=""></a>
+            </div>
+            <div class="footer-info">
+                <ul class="footer-info-links">
+                    <li class="footer-info-links__items"><a class="footer-info-links__item" href="">Сведения об
+                            организации</a></li>
+                    <li class="footer-info-links__items"><a class="footer-info-links__item" href="">Телефонный
+                            справочник</a></li>
+                    <li class="footer-info-links__items"><a class="footer-info-links__item" href="">Наши
+                            партнеры</a></li>
+                    <li class="footer-info-links__items"><a class="footer-info-links__item" href="">Абитуриенту</a>
+                    </li>
+                    <li class="footer-info-links__items"><a class="footer-info-links__item" href="">Студенту</a>
+                    </li>
+                    <li class="footer-info-links__items"><a class="footer-info-links__item" href="">Институт</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

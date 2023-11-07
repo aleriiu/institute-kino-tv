@@ -1204,6 +1204,100 @@ a:hover,
 
 /*----------------------EMPLOYEE CARD PAGE ENDS---------------------- */
 
+
+/*------------------------INFORMATION PAGE------------------------*/
+
+.section-history {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 100%;
+}
+
+.section-history-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3.3rem 3.3rem 3.3rem 3.3rem;
+}
+
+.history-header-wrapper {
+    padding-bottom: 1rem;
+}
+
+.history-card__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.history {
+    padding-bottom: 3rem;
+}
+
+.history__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17777b;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    color: #FFFFFF;
+}
+
+.history__tags {
+    display: flex;
+    gap: 0.813rem;
+}
+
+.section-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.25rem;
+}
+
+.section-contacts-header {
+    display: flex;
+    flex-direction: column;
+    background-color: unset;
+    border-radius: 20px;
+    padding: 6.3rem 3.3rem 3.3rem 3.3rem;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-header-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-container_header {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.438rem;
+}
+
+.contact-container_text {
+    font-weight: 400;
+}
+
+/*------------------------INFORMATION PAGE END------------------------ */
+
 @media (min-width: 1921px) {
     .section {
         width: 70%;
@@ -1285,6 +1379,16 @@ a:hover,
     }
 
     /*------------------------EMPLOYEE CARD PAGE ENDS------------------------*/
+
+    /*------------------------INFORMATION PAGE------------------------*/
+
+    .sidebar__container-information {
+        position: absolute;
+        z-index: 4;
+        max-width: 50%;
+    }
+
+    /*------------------------INFORMATION PAGE ENDS------------------------*/
 }
 
 @media (max-width: 1280px) {
@@ -1524,6 +1628,28 @@ a:hover,
     }
 
     /*------------------------EMPLOYEE CARD PAGE ENDS------------------------*/
+
+    /*------------------------INFORMATION PAGE------------------------*/
+    .history {
+        overflow-y: scroll;
+    }
+
+    .sidebar__container-information {
+        position: absolute;
+        z-index: 4;
+    }
+
+    .contacts-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .section-contacts-header {
+        padding: 3.3rem 3.3rem 3.3rem 3.3rem;
+    }
+
+    /*------------------------INFORMATION PAGE ENDS------------------------*/
 }
 
 @media (max-width: 790px) {
@@ -1930,6 +2056,17 @@ a:hover,
 
     /*------------------------EMPLOYEE CARD PAGE ENDS------------------------*/
 
+    /*------------------------INFORMATION PAGE------------------------*/
+
+    .section-history-header {
+        padding: 3.3rem 1.3rem 3.3rem 1.3rem;
+    }
+
+    .history {
+        padding-bottom: 1.5rem;
+    }
+
+    /*------------------------INFORMATION PAGE ENDS------------------------*/
 }
 
 @media (max-width: 599px) {
