@@ -1309,6 +1309,159 @@ a:hover,
 
 /*------------------------INFORMATION PAGE END------------------------ */
 
+
+/*------------------------FACULTY PAGE------------------------ */
+.sidebar__chapter-description {
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.sidebar__container-description {
+    margin-right: 0;
+    border-radius: 50px;
+    padding: 1.938rem 3.688rem 1.813rem 3.438rem;
+    width: 73%;
+}
+
+.section-description-header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-description-header {
+    display: flex;
+    flex-direction: column;
+    background-color: unset;
+    border-radius: 20px;
+}
+
+.description-contacts {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.description-contacts_phone {
+    display: flex;
+    align-items: center;
+}
+
+.description-contacts_phone-text {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #18777b;
+    font-weight: 600;
+}
+
+.description {
+    padding: 1.938rem 3.688rem 1.813rem 3.438rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.description__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    padding: 0.3rem 1.25rem;
+    color: #000000;
+    font-weight: 600;
+    line-height: 1.875rem;
+    width: 10%;
+}
+
+.description__tag-link {
+    color: #000000;
+    white-space: nowrap;
+}
+
+.description__text-wrapper {
+    display: flex;
+}
+
+.description__text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #000000;
+    width: 50%;
+}
+
+.photo-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    gap: 3.375rem;
+    position: relative;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.peoples-contact-details {
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-between;
+}
+
+.people-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    gap: 0.5rem;
+}
+
+.people-contact_img {
+    max-width: 100%;
+}
+
+.people-contact_header {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #18777b;
+    line-height: 1.375rem;
+}
+
+.people-contact_text {
+    font-size: 0.875rem;
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.people-contact_phone {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #000000;
+    padding-top: 1rem;
+}
+
+
+/*------------------------FACULTY PAGE END------------------------ */
+
 @media (min-width: 1921px) {
     .section {
         width: 70%;
