@@ -2059,11 +2059,15 @@ a:hover,
     /*------------------------INFORMATION PAGE------------------------*/
 
     .section-history-header {
-        padding: 3.3rem 1.3rem 3.3rem 1.3rem;
+        padding: 1.3rem 1.3rem 3.3rem 1.3rem;
     }
 
     .history {
         padding-bottom: 1.5rem;
+    }
+
+    .section-contacts-header {
+        padding: 1.3rem 3.3rem 3.3rem 3.3rem;
     }
 
     /*------------------------INFORMATION PAGE ENDS------------------------*/
