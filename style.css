@@ -1254,6 +1254,15 @@ a:hover,
     gap: 0.813rem;
 }
 
+.history__tag_color {
+    background-color: #3acbc7;
+}
+
+.history__tag-link {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
 .section-contacts {
     display: flex;
     flex-direction: column;
@@ -1290,10 +1299,12 @@ a:hover,
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 1.438rem;
+    color: #000000;
 }
 
 .contact-container_text {
     font-weight: 400;
+    color: #000000;
 }
 
 /*------------------------INFORMATION PAGE END------------------------ */
