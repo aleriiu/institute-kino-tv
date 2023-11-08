@@ -2393,6 +2393,10 @@ a:hover,
         width: 100%;
     }
 
+    .description__text {
+        text-align: justify;
+    }
+
 
     .description__text-wrapper {
         grid-template-columns: repeat(1, 1fr);
