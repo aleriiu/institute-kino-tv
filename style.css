@@ -1320,7 +1320,6 @@ a:hover,
     margin-right: 0;
     border-radius: 50px;
     padding: 1.938rem 3.688rem 1.813rem 3.438rem;
-    width: 73%;
 }
 
 .section-description-header__container {
@@ -1340,7 +1339,6 @@ a:hover,
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 50px;
-    width: 20%;
     justify-content: space-around;
 }
 
@@ -1361,6 +1359,11 @@ a:hover,
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+.description__tags {
+    display: flex;
+    justify-content: space-between;
 }
 
 .description__tag {
@@ -1439,13 +1442,15 @@ a:hover,
 
 .people-contact_img {
     max-width: 100%;
+    padding-bottom: 1rem;
 }
 
 .people-contact_header {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #18777b;
     line-height: 1.375rem;
+    text-align: center;
 }
 
 .people-contact_text {
