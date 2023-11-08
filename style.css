@@ -1311,6 +1311,11 @@ a:hover,
 
 
 /*------------------------FACULTY PAGE------------------------ */
+.active-item {
+    border-radius: 50px;
+    background-color: #3acbc7;
+}
+
 .sidebar__chapter-description {
     flex-direction: row;
     gap: 3rem;
@@ -1324,8 +1329,11 @@ a:hover,
 }
 
 .section-description-header__container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
 }
 
 .section-description-header {
@@ -1335,13 +1343,23 @@ a:hover,
     border-radius: 20px;
 }
 
+.sidebar__chapter-header_description {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__chapter-header_description::after {
+    content: url(./images/arrow-down.png);
+    padding-left: 0.3rem;
+}
+
 .description-contacts {
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 50px;
     justify-content: space-around;
-    width: 18%;
+    padding: 1rem 2rem;
 }
 
 .description-contacts_phone {
@@ -1628,10 +1646,6 @@ a:hover,
         gap: 1rem;
     }
 
-    .description-contacts {
-        width: 18%;
-    }
-
     /*------------------------FACULTY PAGE END------------------------ */
 }
 
@@ -1899,6 +1913,7 @@ a:hover,
 
     .section-description-header__container {
         gap: 0.5rem;
+        overflow: scroll;
     }
 
     .sidebar__chapter-description {
@@ -1917,12 +1932,7 @@ a:hover,
     }
 
     .section-description-header__container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .description-contacts {
-        width: 32%;
+        grid-template-columns: 58rem 1fr;
     }
 
     .description-contacts>img {
@@ -1930,7 +1940,7 @@ a:hover,
     }
 
     .description-contacts_phone-text {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .description-contacts_phone>img {
@@ -2389,6 +2399,10 @@ a:hover,
 
     /*------------------------FACULTY PAGE------------------------*/
 
+    .sidebar__chapter-description {
+        justify-content: space-between;
+    }
+
     .description__tag {
         width: 100%;
     }
@@ -2412,16 +2426,16 @@ a:hover,
         width: 100%;
     }
 
+    .people-contact_img {
+        width: 150px;
+    }
+
     .section-item-header_photo {
         overflow: unset;
     }
 
     .see-all__title-photo {
         white-space: wrap;
-    }
-
-    .description-contacts {
-        width: 60%;
     }
 
     /*-----------------------FACULTY PAGE ENDS------------------------*/
