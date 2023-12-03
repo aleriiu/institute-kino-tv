@@ -13,3 +13,15 @@ mobMenu.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     modalMenu.style.display = 'none';
 })
+
+const closeBtnNav = document.querySelector('#close-btn');
+const modalMenuMain = document.querySelector('#main-modal_menu__wrapper');
+const mobMenuMain = document.querySelector('#main-mob-menu');
+
+mobMenuMain.addEventListener('click', () => {
+    modalMenuMain.style.display = 'flex';
+});
+
+closeBtnNav.addEventListener('click', () => {
+    modalMenuMain.style.display = 'none';
+})

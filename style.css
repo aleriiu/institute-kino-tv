@@ -1513,7 +1513,8 @@ a:hover,
     display: none;
 }
 
-#close {
+#close,
+#close-btn {
     display: none;
 }
 
@@ -1582,115 +1583,7 @@ a:hover,
     }
 }
 
-@media (max-width: 1200px) {
-    .mob-menu-wrapper {
-        flex-direction: row-reverse;
-        gap: 0.75rem;
-        position: relative;
-    }
 
-    .nav-mob-menu,
-    .description {
-        flex-basis: 50%;
-        padding: 0;
-    }
-
-    .mob-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 0;
-        width: 100%;
-        background-color: #3acbc7;
-        border-radius: 20px;
-    }
-
-    .mob-menu .section-burger-menu {
-        position: absolute;
-        transform: translateX(-200%);
-        padding: 0;
-    }
-
-    .mob-menu .section-burger-menu span {
-        background-color: #FFFFFF;
-    }
-
-    .mob-menu-name {
-        color: #FFFFFF;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        font-weight: 500;
-    }
-
-    .description__tags {
-        flex-direction: column;
-        background-color: #3acbc7;
-        top: 3.75rem;
-        width: 80%;
-        border-radius: 20px;
-        overflow: hidden;
-        padding: 1.2rem 1.2rem;
-        display: flex;
-    }
-
-    .description__tag {
-        width: 100% !important;
-    }
-
-    .modal_menu__wrapper {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-        display: none;
-    }
-
-    /* .description:hover .description__tags,
-    .description:active .description__tags {
-        height: auto !important;
-        padding: 1.2rem 1.2rem;
-    } */
-
-    #close {
-        display: flex;
-        color: #FFFFFF;
-        font-size: 4rem;
-        justify-content: flex-end;
-        align-items: center;
-        line-height: 0.6;
-    }
-
-    .section-description-header__container {
-        display: none;
-    }
-
-    .nav-mob-menu {
-        display: flex;
-    }
-
-    .mob-menu_color {
-        background-color: #17777b;
-    }
-
-    .mob-menu .section-burger-menu_nav {
-        transform: translateX(200%);
-    }
-
-    .modal_menu__container {
-        display: grid;
-        grid-template-columns: 58rem 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 0px;
-    }
-
-}
 
 @media (min-width: 1281px) and (max-width: 1440px) {
 
@@ -2023,7 +1916,7 @@ a:hover,
         margin-right: 0;
     }
 
-    .sidebar__container:hover,
+    /* .sidebar__container:hover,
     .sidebar__chapter:hover,
     .sidebar__container:active,
     .sidebar__chapter:active {
@@ -2032,7 +1925,7 @@ a:hover,
         opacity: 95%;
         background-color: #18777b;
         padding-bottom: 1rem;
-    }
+    } */
 
     .employee-card__about-name {
         font-size: 2.7rem;
@@ -2135,6 +2028,140 @@ a:hover,
     }
 
     /*------------------------FACULTY PAGE END------------------------*/
+}
+
+@media (max-width: 1200px) {
+    .mob-menu-wrapper {
+        flex-direction: row-reverse;
+        gap: 0.75rem;
+        position: relative;
+    }
+
+    .nav-mob-menu,
+    .description {
+        flex-basis: 50%;
+        padding: 0;
+    }
+
+    .mob-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        width: 100%;
+        background-color: #3acbc7;
+        border-radius: 20px;
+    }
+
+    .mob-menu .section-burger-menu {
+        position: absolute;
+        transform: translateX(-200%);
+        padding: 0;
+    }
+
+    .mob-menu .section-burger-menu span {
+        background-color: #FFFFFF;
+    }
+
+    .mob-menu-name {
+        color: #FFFFFF;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        font-weight: 500;
+    }
+
+    .description__tags {
+        flex-direction: column;
+        background-color: #3acbc7;
+        top: 3.75rem;
+        width: 80%;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 1.2rem 1.2rem;
+        display: flex;
+    }
+
+    .description__tag {
+        width: 100% !important;
+    }
+
+    .modal_menu__wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        display: none;
+    }
+
+    .main-modal_menu__wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        display: none;
+    }
+
+    /* .description:hover .description__tags,
+    .description:active .description__tags {
+        height: auto !important;
+        padding: 1.2rem 1.2rem;
+    } */
+
+    #close,
+    #close-btn {
+        display: flex;
+        color: #FFFFFF;
+        font-size: 4rem;
+        justify-content: flex-end;
+        align-items: center;
+        line-height: 0.6;
+    }
+
+    .section-description-header__container {
+        display: none;
+    }
+
+    .nav-mob-menu {
+        display: flex;
+    }
+
+    .mob-menu_color {
+        background-color: #17777b;
+    }
+
+    .mob-menu .section-burger-menu_nav {
+        transform: translateX(200%);
+    }
+
+    .modal_menu__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+    }
+
+    .sidebar__chapter-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar__container-description_padding {
+        padding: 1.2rem 1.2rem !important;
+        border-radius: 20px;
+    }
+
 }
 
 @media (max-width: 790px) {
@@ -2498,14 +2525,14 @@ a:hover,
         font-size: 1.3rem;
     }
 
-    .sidebar__container:hover,
+    /* .sidebar__container:hover,
     .sidebar__chapter:hover,
     .sidebar__container:active,
     .sidebar__chapter:active {
         width: 80%;
         opacity: 95%;
         height: auto;
-    }
+    } */
 
     .sidebar__chapter-header {
         font-size: 0.8rem;
