@@ -93,7 +93,12 @@ a:hover,
 }
 
 .menu-wrapper-padding {
-    padding: 1.5rem;
+    padding: 5.5rem 1.5rem 5.5rem 5.5rem;
+}
+
+.menu-wrapper-padding_right {
+    padding-right: 5.5rem;
+    padding-left: 1.5rem;
 }
 
 
@@ -1690,11 +1695,16 @@ a:hover,
 @media (max-width: 1280px) {
 
     .menu-wrapper-padding {
-        padding: 1.5rem;
+        padding: 5.5rem;
+        padding-bottom: 0;
+    }
+
+    .menu-wrapper-padding_right {
+        padding-bottom: 5.5rem;
     }
 
     .menu-wrapper_mob {
-        width: 24rem;
+        width: 33rem;
         flex-direction: column;
     }
 
@@ -2212,11 +2222,24 @@ a:hover,
     }
 
     .menu-wrapper_mob-stud {
-        transform: translateX(-68%);
+        transform: translateX(-76%);
+    }
+
+    .menu-wrapper_mob-enrollee {
+        transform: translateX(-36%);
     }
 
     .menu-wrapper_mob {
         width: 18rem;
+    }
+
+    .menu-wrapper-padding {
+        padding: 2.5rem;
+        padding-bottom: 0;
+    }
+
+    .menu-wrapper-padding_right {
+        padding-bottom: 2.5rem;
     }
 
     .info-links_group-wrapper {
