@@ -84,12 +84,16 @@ a:hover,
     transition: all 0.4s ease-out;
     position: absolute;
     z-index: 4;
-    background: rgba(255, 255, 255, 0.93);
+    background: #17777b;
     display: flex;
     border-radius: 20px;
-    transform: translateX(-35%);
-    width: 51rem;
+    transform: translateX(-43%);
+    width: 62rem;
     top: 3.5rem;
+}
+
+.menu-wrapper-padding {
+    padding: 1.5rem;
 }
 
 
@@ -1655,6 +1659,10 @@ a:hover,
         padding: 1.5rem 1.3rem;
     }
 
+    .menu-wrapper_mob-stud {
+        transform: translateX(-53%);
+    }
+
     /*------------------------NEWS PAGE------------------------ */
     .section-burger-menu {
         display: block;
@@ -1737,9 +1745,17 @@ a:hover,
 
 @media (max-width: 1280px) {
 
+    .menu-wrapper-padding {
+        padding: 1.5rem;
+    }
+
     .menu-wrapper_mob {
+        width: 24rem;
         flex-direction: column;
-        width: 20rem;
+    }
+
+    .info-links_column {
+        flex-direction: column;
     }
 
     .header__nav-item__content {
@@ -1752,7 +1768,11 @@ a:hover,
     }
 
     .menu-wrapper_mob-stud {
-        transform: translateX(-69%);
+        transform: translateX(-37%);
+    }
+
+    .menu-wrapper_mob-enrollee {
+        transform: translateX(-35%);
     }
 
     .header__container-mob {
@@ -2111,6 +2131,14 @@ a:hover,
     .hero__btn-click {
         width: 0.5rem;
         height: 0.5rem;
+    }
+
+    .menu-wrapper_mob-stud {
+        transform: translateX(-68%);
+    }
+
+    .menu-wrapper_mob {
+        width: 18rem;
     }
 
     .info-links_group-wrapper {
