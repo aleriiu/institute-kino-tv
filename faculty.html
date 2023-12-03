@@ -15,6 +15,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="./script.js"></script>
+    <script defer src="./modal.js"></script>
 </head>
 
 <body ontouchstart="">
@@ -213,21 +214,77 @@
                     <div class="section-description-header__container">
                         <div class="sidebar__container-description">
                             <ul class="sidebar__chapter sidebar__chapter-description">
-                                <div class="active-item"></div>
-                                <li class="sidebar__chapter-header sidebar__chapter-header_description">
-                                    Общие&nbsp;сведения
+                                <!-- <div class="active-item"></div> -->
+                                <li class="sidebar__chapter-header">
+                                    <input type="checkbox" class="accordion_toggle" id="toggle-05" hidden>
+                                    <label class="accordion_trigger" for="toggle-05">Общие&nbsp;сведения</label>
+                                    <div class="accordion_target">
+                                        <ul>
+                                            <li><a class="sidebar__chapter-link" href="">Миссия</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">История</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Контакты</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="sidebar__chapter-header sidebar__chapter-header_description">
-                                    Кафедры
+                                <li class="sidebar__chapter-header">
+                                    <input type="checkbox" class="accordion_toggle" id="toggle-06" hidden>
+                                    <label class="accordion_trigger" for="toggle-06">Кафедры</label>
+                                    <div class="accordion_target">
+                                        <ul>
+                                            <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Попечительский совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                    СПбГИКиТ</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Художественный совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Учебные подразделенияa</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Службы института</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="sidebar__chapter-header sidebar__chapter-header_description">
-                                    Образование
+                                <li class="sidebar__chapter-header">
+                                    <input type="checkbox" class="accordion_toggle" id="toggle-07" hidden>
+                                    <label class="accordion_trigger" for="toggle-07">Образование</label>
+                                    <div class="accordion_target">
+                                        <ul>
+                                            <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Попечительский совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                    СПбГИКиТ</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Художественный совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Учебные подразделенияa</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Службы института</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="sidebar__chapter-header sidebar__chapter-header_description">
-                                    Творчество
+                                <li class="sidebar__chapter-header">
+                                    <input type="checkbox" class="accordion_toggle" id="toggle-08" hidden>
+                                    <label class="accordion_trigger" for="toggle-08">Творчество</label>
+                                    <div class="accordion_target">
+                                        <ul>
+                                            <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Попечительский совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                    СПбГИКиТ</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Художественный совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Учебные подразделенияa</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Службы института</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="sidebar__chapter-header sidebar__chapter-header_description">
-                                    Деятельность
+                                <li class="sidebar__chapter-header">
+                                    <input type="checkbox" class="accordion_toggle" id="toggle-09" hidden>
+                                    <label class="accordion_trigger" for="toggle-09">Деятельность</label>
+                                    <div class="accordion_target">
+                                        <ul>
+                                            <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Попечительский совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                    СПбГИКиТ</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Художественный совет</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Учебные подразделенияa</a></li>
+                                            <li><a class="sidebar__chapter-link" href="">Службы института</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -239,16 +296,142 @@
                             <img src="./images/icon-vk-accord.png" alt="icon">
                         </div>
                     </div>
-                    <div class="description">
-                            <div id="mob-menu" class="mob-menu">
-                                <p class="mob-menu-name">МЕНЮ</p>
-                                <div class="section-burger-menu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                    <div class="nav-mob-menu">
+                        <div id="main-mob-menu" class="mob-menu mob-menu_color">
+                            <p class="mob-menu-name">МЕНЮ</p>
+                            <div class="section-burger-menu section-burger-menu_nav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="main-modal_menu__wrapper" class="modal_menu__wrapper">
+                            <div class="modal_menu__container">
+                                <div class="sidebar__container-description">
+                                    <ul class="sidebar__chapter sidebar__chapter-description">
+                                        <li class="sidebar__chapter-header">
+                                            <input type="checkbox" class="accordion_toggle" id="toggle-05" hidden>
+                                            <label class="accordion_trigger" for="toggle-05">Общие&nbsp;сведения</label>
+                                            <div class="accordion_target">
+                                                <ul>
+                                                    <li><a class="sidebar__chapter-link" href="">Миссия</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">История</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Контакты</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar__chapter-header">
+                                            <input type="checkbox" class="accordion_toggle" id="toggle-06" hidden>
+                                            <label class="accordion_trigger" for="toggle-06">Кафедры</label>
+                                            <div class="accordion_target">
+                                                <ul>
+                                                    <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Попечительский
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                            СПбГИКиТ</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Художественный
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Учебные
+                                                            подразделенияa</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Службы института</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar__chapter-header">
+                                            <input type="checkbox" class="accordion_toggle" id="toggle-07" hidden>
+                                            <label class="accordion_trigger" for="toggle-07">Образование</label>
+                                            <div class="accordion_target">
+                                                <ul>
+                                                    <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Попечительский
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                            СПбГИКиТ</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Художественный
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Учебные
+                                                            подразделенияa</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Службы института</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar__chapter-header">
+                                            <input type="checkbox" class="accordion_toggle" id="toggle-08" hidden>
+                                            <label class="accordion_trigger" for="toggle-08">Творчество</label>
+                                            <div class="accordion_target">
+                                                <ul>
+                                                    <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Попечительский
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                            СПбГИКиТ</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Художественный
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Учебные
+                                                            подразделенияa</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Службы института</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar__chapter-header">
+                                            <input type="checkbox" class="accordion_toggle" id="toggle-09" hidden>
+                                            <label class="accordion_trigger" for="toggle-09">Деятельность</label>
+                                            <div class="accordion_target">
+                                                <ul>
+                                                    <li><a class="sidebar__chapter-link" href="">Ученый совет</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Попечительский
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Почетные профессора
+                                                            СПбГИКиТ</a></li>
+                                                    <li><a class="sidebar__chapter-link" href="">Художественный
+                                                            совет</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Учебные
+                                                            подразделенияa</a>
+                                                    </li>
+                                                    <li><a class="sidebar__chapter-link" href="">Службы института</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description-contacts">
+                                    <div class="description-contacts_phone">
+                                        <img src="./images/icon-phone-mail.png" alt="icon">
+                                        <p class="description-contacts_phone-text">Контакты</p>
+                                    </div>
+                                    <img src="./images/icon-vk-accord.png" alt="icon">
                                 </div>
                             </div>
-                            <ul class="description__tags">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <div id="mob-menu" class="mob-menu">
+                            <p class="mob-menu-name">МЕНЮ</p>
+                            <div class="section-burger-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="modal_menu__wrapper" class="modal_menu__wrapper">
+                            <ul id="modal_menu" class="description__tags">
+                                <li id="close">&times;</li>
                                 <li class="description__tag history__tag_color"><a
                                         class="description__tag-link">История</a>
                                 </li>
@@ -259,6 +442,8 @@
                                 <li class="description__tag"><a class="description__tag-link">Расписание</a></li>
                                 <li class="description__tag"><a class="description__tag-link">Абитуриентам</a></li>
                                 <li class="description__tag"><a class="description__tag-link">Документы</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="description__text-wrapper">

@@ -95,3 +95,6 @@ slider.addEventListener('mousemove', move, false);
 slider.addEventListener('mousedown', startDragging, false);
 slider.addEventListener('mouseup', stopDragging, false);
 slider.addEventListener('mouseleave', stopDragging, false);
+
+
+
